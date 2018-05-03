@@ -1,0 +1,127 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Dotted Leaders</title>
+<style type="text/css">
+* {
+	margin:0;
+	padding:0
+}
+h1, h2 {
+	padding:10px 20px 0
+}
+#wrap {
+	width:500px;
+	border:1px solid #eff2df;
+	margin:0 20px;
+	float:left;
+	background:#809900;
+	display:inline;/*Ie double margin fix*/
+}
+#wrap ul {
+	padding:20px 40px;
+	list-style:none;
+	float:left;
+	border:1px solid #4c7300;
+	position:relative;
+	left:-2px;
+	top:-2px;
+	background:#eff2df;
+	color:#4c7300;
+}
+#wrap li {
+	line-height:1.2;
+	margin:-.9em 0 0 0;
+	position:relative;
+	float:left;
+	width:100%;
+	text-align:left;
+	border-bottom:1px dotted #000;
+	clear:both;
+}
+* html #wrap li {
+	border:none;
+	background: url(images/dotted-leader.gif) repeat-x left bottom;
+}
+#wrap li span {
+	background:#eff2df;
+	padding:1px 0 1px 5px;
+	color:#000;
+	position:relative;
+	top:.4em;
+	left:1px;/* ie rounding error*/
+	float:right;
+}
+#wrap li em {
+	margin:0;
+	position:relative;
+	top:1.6em;
+	padding:0 5px 0 0;
+	background:#eff2df;
+}
+#wrap p {
+	padding:0 5em 0 0
+}
+.amend {
+	clear:both;
+	padding:20px
+}
+.amend p {
+	margin:0 0 1em 0
+}
+</style>
+</head>
+<body>
+<h1>Dotted Leaders</h1>
+<h2>Recipe for success</h2>
+<div id="wrap">
+	<ul>
+		<li>
+			<p><em>Lorem ipsum dolor sit amet </em></p>
+			<span>£8.99</span></li>
+		<li>
+			<p><em>In porta nisl id nisl varius ullamcorper</em></p>
+			<span>£9.99</span></li>
+		<li>
+			<p><em>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In porta nisl id nisl varius ullamcorper.</em></p>
+			<span>£10.00</span></li>
+		<li>
+			<p><em>Suspendisse augue mauris, mattis ac, commodo quis, lobortis vel, mauris. Etiam dolor neque, iaculis sit amet, tincidunt nec, elementum ut, lorem.</em></p>
+			<span>£11.00</span></li>
+		<li>
+			<p><em>Donec sed felis sit amet risus</em></p>
+			<span>£12.00</span></li>
+		<li>
+			<p><em>Maecenas ante. Suspendisse pharetra, metus in tempus egestas, purus ante pellentesque purus, at gravida metus elit nec nunc. Etiam ante ligula, porttitor et, euismod commodo, pulvinar id, pede. Curabitur et magna. Vestibulum leo nibh, viverra sed, imperdiet non,</em></p>
+			<span>£13.99</span></li>
+		<li>
+			<p><em>Etiam ante ligula,</em></p>
+			<span>£14.00</span></li>
+		<li>
+			<p><em>Fusce condimentum</em></p>
+			<span>£15.00</span></li>
+		<li>
+			<p><em>Morbi nibh velit, sodales eu</em></p>
+			<span>£16.00</span></li>
+		<li>
+			<p><em>Etiam ante ligula,</em></p>
+			<span>£14.00</span></li>
+		<li>
+			<p><em>Fusce condimentum</em></p>
+			<span>£15.00</span></li>
+		<li>
+			<p><em>Morbi nibh velit, sodales eu</em></p>
+			<span>£16.00</span></li>
+	</ul>
+</div>
+<div class="amend">
+	<p><strong>Note:</strong>If you need to add links in the menu then you need to add a descending z-index as shown in <a href="list-with-dotted-leader8.htm">this example</a></p>
+	<p>Or a simpler <a href="list-with-dotted-leader9.htm">alternative method</a> that I haven't documented yet and uses absolute positioning to place the text on the right.</p>
+	<p>If you think a list isn't suitable for this menu then the same techniques could be used when using a DL (Definition List) and here is <a href="list-with-dotted-leader-dltest.htm">an example.</a></p>
+	<p>However I clearly think that a list is the most suitable tool for this job as this is clearly a list of items and not a spreadsheet.</p>
+	<p>However feel free top disagree and here is an <a href="list-with-dotted-leader-table.htm">example using a table</a> but it does require 30% more html than the CSS methods.</p>
+</div>
+</body>
+</html>

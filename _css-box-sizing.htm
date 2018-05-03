@@ -1,0 +1,33 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<style>
+h4 {margin-bottom: 0.1em;}
+ul {margin-top: 0.1em;margin-bottom: 0.1em;}
+</style>
+
+<p>The box-sizing CSS property defines how the user agent should calculate the total width and height of an element.
+<br>box-sizing: content-box; [the default]
+<br>box-sizing: border-box;<p>
+
+<p>By default in the CSS box model, the width and height you assign to an element is applied only to the element's content box. If the element has any border or padding, this is then added to the width and height to arrive at the size of the box that's rendered on the screen. This means that when you set width and height you have to adjust the value you give to allow for any border or padding that may be added.</p>
+
+<h4>The box-sizing property can be used to adjust this behavior:</h4>
+<ul>
+<li>content-box gives you the default CSS box-sizing behavior. If you set an element's width to 100 pixels, then the element's content box will be 100 pixels wide, and the width of any border or padding will be added to the final rendered width.
+<li>border-box tells the browser to account for any border and padding in the values you specify for width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.
+</ul>
+
+<p>Some experts recommend that web developers should consider routinely applying box-sizing: border-box to all elements.</p>
+
+<p>https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing</p>
+
+
+
+<p>* {    box-sizing: border-box;} // This works fairly well, but it leaves out pseudo elements</p>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>HTML5 </title>
+<style>
+p {margin-top: 0.5em;margin-bottom: 0.1em;}
+
+</style>
+</head>
+<body>
+
+
+<p>It’s easy to get your markup to validate as HTML 5 — just change your DOCTYPE from whatever it is now to this: <b>&lt;!DOCTYPE html&gt;</b></p>
+
+<p>If you like to knock out quick prototypes or experiments that don't require much styling, you might be interested in a miniature document in HTML 5:
+<br>&lt;!DOCTYPE html&gt;
+<br>&lt;title&gt;Small HTML 5&lt;/title&gt;
+<br>&lt;p>Hello world&lt;/p&gt;</p>
+<p>That's completely valid HTML 5 too.</p>
+<hr>
+
+<p>Access keys provide easier navigation by assigning a keyboard shortcut to a link, which will usually gain focus when the user presses Alt or Ctrl + the access key. The exact key combination varies by platform.
+
+<br><a href="somepage.html" accesskey="h">a href="somepage.html" accesskey="h"</a></p>
+
+<hr>
+<p>The mark tag defines marked text, to highlight parts of your text.</p>
+<p>Credit card required at time of <mark>booking.</mark></p>
+<hr>
+
+<p>The HTML progress element displays an indicator showing the completion progress of a task, typically displayed as a progress bar.</p>
+<progress value="70" max="100">70 %</progress>
+
+<hr>
+<p>The HTML "aside" element represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.<p>
+<aside>aside</aside>
+<hr>
+
+<p>The HTML "nav" element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.</p>
+<nav>nav</nav>
+<hr>
+
+<p>The HTML "header" element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also other elements like a logo, a search form, an author name, and so on.</p>
+<header>header</header>
+<hr>
+
+<p>The HTML "section" element represents a standalone section — which doesn't have a more specific semantic element to represent it — contained within an HTML document. Typically, but not always, sections have a heading.</p>
+<p>As an example, a navigation menu should be wrapped in a <nav> element, but a list of search results and a map display and its controls don't have specific elements, and could be put inside a section.</p>
+<section>section</section>
+<hr>
+
+<p>The HTML "article" element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry.</p>
+<article>article</article>
+<hr>
+
+<p>The HTML "footer" element represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright data or links to related documents.</p>
+<footer>footer</footer>
+<hr>
+
+<p>The HTML "address" element indicates that the enclosed HTML provides contact information for a person or people, or for an organization. The contact information provided by an "address" element's contents can take whatever form is appropriate for the context, and may include any type of contact information is needed, such as physical address, URL, email address, phone number, social media handle, geographic coordinates, and so forth. It should include the name of the person, people, or organization to which the contact information refers.</p>
+<address>address</address>
+<hr>
+
+<p>The tag details specifies additional details that the user can view or hide on demand. Use it to create an interactive widget that the user can open and close. Semantically you can use any type of content inside it and should not be visible unless the open attribute is set.</p>
+<details open><p>Credit card required at time of booking.</p></details>
+<hr>
+
+<p>The  summary  tag defines a visible heading for the  details  element. The heading can be clicked to view/hide the details.</p>
+<details><summary>Payment conditions</summary><p>Credit card required at time of booking.</p></details>
+
+<hr>
+<p>The &lt;time&gt; tag defines a human-readable date/time. This element can also be used to encode dates and times in a machine-readable way so that user agents can offer to add birthday reminders or scheduled events to the user’s calendar, and search engines can produce smarter search results.</p>
+<p>Breakfast buffet starts at<time>7.00 AM</time>at the restaurant.</p>
+<p>Concert at the lobby in<time datetime="2018-06-20T19:00">June 20th 7.00 PM</time></p>
+
+<hr>
+<p>The specification for the small tag explains that this tag should be used to lower the importance of text or information. Browsers interpret this by making the font smaller so it has less visible impact.</p>
+<p>Cancelations must be canceled up to 48h, <small>to avoid penalty of one night per room.</small></p>
+
+<hr>
+
+<p>You can now use the &lt;datalist&gt; element to define the list of valid choices for your various &lt;input&gt; tags. This component is slightly different on various browsers, but the common way it works is by showing a small drop-down arrow to the right of the field indicating that this field has options.</p>
+<datalist><option value="Master Card"><option value="Visa"><option value="American Express"></datalist>
+
+<hr>
+<p>dialog defines a dialog box element or window: "Welcome to our hotel."</p>
+<dialog open><p>Welcome to our hotel.</p></dialog>
+
+</body>
+</html>

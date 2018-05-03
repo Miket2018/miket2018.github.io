@@ -1,0 +1,179 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd"> 
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Style hr tag with CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+hr.line-18 { background-color:#fff;border: 0; height: 30px; border-style: solid; border-color: #8c8c8c; border-width: 1px 0 0 0; border-radius: 20px; } hr.line-18:before { display: block; content: ""; height: 30px; margin-top: -31px; border-style: solid; border-color: #8c8c8c; border-width: 0 0 1px 0; border-radius: 20px; } 
+
+hr.line-4 { padding: 0; border: none; border-top: medium double #8c8c8c; color: #8c8c8c; text-align: center; } hr.line-4:after { content: "§"; display: inline-block; position: relative; top: -0.7em; font-size: 1.5em; padding: 0 0.25em; background: #fff;}
+
+hr.line-15{ border: 0;border-top: 4px double #8c8c8c; text-align: center; } hr.line-15:after { content: '\2665'; display: inline-block; position: relative; top: -15px; padding: 0 10px; background: #fff; color: #8c8c8c; font-size: 18px; }
+
+hr.line-16{ border: 0;border-top: 1px dashed #8c8c8c; text-align:center; } hr.line-16:after { content: '\002702'; display: inline-block; position: relative; top: -13px; padding: 0 3px; background: #fff; color: #8c8c8c; font-size: 18px;}
+
+.line-19 { border: none; height: 10px; background: linear-gradient(-135deg, #fff 5px, transparent 0) 0 5px, linear-gradient(135deg, #fff 5px, #8c8c8c 0) 0 5px; background-color: #fff; background-position: left bottom; background-repeat: repeat-x; background-size: 10px 10px; }
+
+</style>
+</head>
+<body>
+
+Standard:
+<hr>
+
+hr {
+  border: 0;
+  border-top: 1px solid #8c8c8c;
+  border-bottom: 1px solid #fff;
+}
+<hr style="border: 0;border-top: 1px solid #8c8c8c;border-bottom: 1px solid #fff; ">
+
+hr {
+  border: 0;
+  border-top: 2px dotted #8c8c8c;
+}
+<hr style="border: 0;border-top: 2px dotted #8c8c8c;">
+
+hr {
+  border: 0;
+  background-color: #fff;
+  border-top: 1px dashed #8c8c8c;
+}
+<hr style="border: 0;background-color: #fff;border-top: 1px dashed #8c8c8c;">
+
+hr { 
+  border: 0; 
+  border-bottom: 2px dashed #ddd; 
+  background: #999; 
+}
+<hr style="border: 0;border-bottom: 2px dashed #ddd; background: #999;">
+
+
+hr { 
+  border : 0;
+  height: 1px; 
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+}
+<hr style="border: 0;height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); ">
+
+
+hr {
+  border: 0; 
+  height: 1px; 
+  background-image: linear-gradient(left, #f0f0f0, #8c8c8c, #f0f0f0);
+}
+<hr style="border: 0;height: 1px; background-image: linear-gradient(to left, #f0f0f0, #8c8c8c, #f0f0f0);">
+
+hr {
+  border: 0;
+  border-top: 3px double #8c8c8c;
+}
+<hr style="border: 0;border-top: 3px double #8c8c8c; ">
+
+hr {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8c8c inset;
+}
+<hr style="border: 0;height: 10px;box-shadow: 0 10px 10px -10px #8c8c8c inset; ">
+
+hr { 
+  border: 0; 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #8c8c8c; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+hr:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8c8c; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+<hr class="line-18">
+
+hr { 
+  padding: 0;
+  border: none; 
+  border-top: medium double #8c8c8c; 
+  color: #8c8c8c; 
+  text-align: center; 
+} 
+hr:after { 
+  content: "§"; 
+  display: inline-block; 
+  position: relative; 
+  top: -0.7em; 
+  font-size: 1.5em; 
+  padding: 0 0.25em; 
+  background: #fff; 
+}
+<hr class="line-4">
+
+hr {
+  border: 0;
+  border-top: 4px double #8c8c8c;
+  text-align: center;
+}
+hr:after {
+  content: '\2665';
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  padding: 0 10px;
+  background: #fff;
+  color: #8c8c8c;
+  font-size: 18px;
+}
+<hr class="line-15">
+
+
+hr { 
+  border: 0;
+  border-top: 1px dashed #8c8c8c; 
+  text-align:center;
+} 
+hr:after { 
+  content: '\002702'; 
+  display: inline-block; 
+  position: relative; 
+  top: -13px; 
+  padding: 0 3px; 
+  background: #fff; 
+  color: #8c8c8c; 
+  font-size: 18px; 
+}
+<hr class="line-16">
+
+hr {
+  border: 0;
+  height: 0;
+  box-shadow: 0 0 10px 1px black;
+}
+<hr style="border: 0;height: 0;box-shadow: 0 0 10px 1px black; ">
+
+hr {  
+  border: none;
+  height: 10px;
+  background: linear-gradient(-135deg, #fff 5px, transparent 0) 0 5px, linear-gradient(135deg, #fff 5px, #8c8c8c 0) 0 5px;
+  background-color: #fff;
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: 10px 10px;
+}
+<hr class="line-19">
+
+
+<hr style="border: 0; ">
+<hr style="border: 0; ">
+<hr style="border: 0; ">
+<hr style="border: 0; ">
+
+</body>
+</html>

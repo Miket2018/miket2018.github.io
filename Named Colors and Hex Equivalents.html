@@ -1,0 +1,2082 @@
+
+<!doctype html>
+<html lang="en">
+
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width">
+
+  
+  <title>Named Colors and Hex Equivalents | CSS-Tricks</title>
+
+  <link rel="apple-touch-icon" href="https://cdn.css-tricks.com/apple-touch-icon.png">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="msapplication-TileImage" content="https://cdn.css-tricks.com/mstile-144x144.png">
+
+  <meta property="fb:pages" content="124436167285">
+
+  <link rel="search" type="application/opensearchdescription+xml" href="https://cdn.css-tricks.com/opensearch.xml" title="CSS-Tricks Search">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/CssTricks">
+
+  <link rel="stylesheet" href="https://cloud.typography.com/610186/6645572/css/fonts.css">
+  <!--[if !IE]><!-->
+  <link rel="stylesheet" href="https://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-16/style.css?v=12.6">
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="https://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-16/css/oldie.css">
+  <![endif]-->
+  <!--[if IE 9]>
+  <link rel="stylesheet" href="https://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-16/style.css?v=12.6>
+  <![endif]-->
+
+    
+  
+<!-- This site is optimized with the Yoast SEO plugin v6.3.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Color Name HEX Color AliceBlue&nbsp; #F0F8FF &nbsp; AntiqueWhite&nbsp; #FAEBD7"/>
+<link rel="canonical" href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Named Colors and Hex Equivalents | CSS-Tricks" />
+<meta property="og:description" content="Color Name HEX Color AliceBlue&nbsp; #F0F8FF &nbsp; AntiqueWhite&nbsp; #FAEBD7" />
+<meta property="og:url" content="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/" />
+<meta property="og:site_name" content="CSS-Tricks" />
+<meta property="article:publisher" content="https://www.facebook.com/CSSTricks" />
+<meta property="og:image" content="https://cdn.css-tricks.com/wp-content/uploads/2014/03/css-tricks-star.png" />
+<meta property="og:image:secure_url" content="https://cdn.css-tricks.com/wp-content/uploads/2014/03/css-tricks-star.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Color Name HEX Color AliceBlue&nbsp; #F0F8FF &nbsp; AntiqueWhite&nbsp; #FAEBD7" />
+<meta name="twitter:title" content="Named Colors and Hex Equivalents | CSS-Tricks" />
+<meta name="twitter:site" content="@Real_CSS_Tricks" />
+<meta name="twitter:image" content="https://cdn.css-tricks.com/wp-content/uploads/2014/03/css-tricks-star.png" />
+<meta name="twitter:creator" content="@chriscoyier" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/css-tricks.com\/","name":"CSS-Tricks","potentialAction":{"@type":"SearchAction","target":"https:\/\/css-tricks.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="CSS-Tricks &raquo; Named Colors and Hex Equivalents Comments Feed" href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/feed/" />
+<link rel='https://api.w.org/' href='https://css-tricks.com/wp-json/' />
+<link rel='shortlink' href='https://wp.me/P354tK-4bZ' />
+<link rel="alternate" type="application/json+oembed" href="https://css-tricks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcss-tricks.com%2Fsnippets%2Fcss%2Fnamed-colors-and-hex-equivalents%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://css-tricks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcss-tricks.com%2Fsnippets%2Fcss%2Fnamed-colors-and-hex-equivalents%2F&#038;format=xml" />
+<!-- Better Art Direction Styles -->
+<style>
+#color-table {
+   border-collapse: separate;
+border-spacing: 5px;
+}
+#color-table td, #color-table th {
+  text-align: left;
+  padding: 3px;
+}
+#color-table th {
+   background: #333;
+   color: white;
+}
+#color-table td {
+   
+border-spacing: 5px;
+}
+#color-table td:nth-child(-n+2) {
+border-bottom: 1px solid #ccc;
+}
+#color-table a {
+   cursor: normal;
+  border: 0;
+   color: black;
+  pointer-events: none;
+}
+#color-table tr:hover td {
+  background: #333;
+  color: white;
+}
+#color-table tr:hover td a {
+   color: white;
+}
+</style>
+
+
+<link rel='dns-prefetch' href='//v0.wordpress.com'/>
+<link rel='dns-prefetch' href='//jetpack.wordpress.com'/>
+<link rel='dns-prefetch' href='//s0.wp.com'/>
+<link rel='dns-prefetch' href='//s1.wp.com'/>
+<link rel='dns-prefetch' href='//s2.wp.com'/>
+<link rel='dns-prefetch' href='//public-api.wordpress.com'/>
+<link rel='dns-prefetch' href='//0.gravatar.com'/>
+<link rel='dns-prefetch' href='//1.gravatar.com'/>
+<link rel='dns-prefetch' href='//2.gravatar.com'/>
+<style type='text/css'>img#wpstats{display:none}</style>	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	
+</head>
+
+<body class="page-template page-template-page-snippet page-template-page-snippet-php page page-id-16119 page-child parent-pageid-3222">
+
+  <header class="site-header">
+
+  <div class="menu-toggle-area">
+    <button id="mobile-menu-toggle" class="button button-header mobile-menu-toggle">
+      <svg class="icon-menu" width="26px" height="26px">
+        <use xlink:href="#icon-menu"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="logo">
+    <a href="/">
+      <svg class="icon-logo-star" width="26px" height="26px">
+        <use xlink:href="#icon-logo-star"></use>
+      </svg>
+    </a>
+  </div>
+
+  <div class="header-middle-area">
+
+    <a href="/" class="logo-link">
+      CSS-Tricks
+    </a>
+
+  </div>
+
+  <button id="search-opener" class="button button-header search-opener-button">
+    <svg class="icon-search" width="26px" height="26px">
+      <use xlink:href="#icon-search"></use>
+    </svg>
+    <svg class="icon-close" width="26px" height="26px">
+      <use xlink:href="#icon-close"></use>
+    </svg>
+  </button>
+
+  <div class="search" role="search" id="search-area">
+
+    <form id="search-form" class="search-form" action="/">
+
+      <label for="s" id="search-label" class="screen-reader">
+        Search
+      </label>
+
+      <input aria-labelledby="search-label" id="s" required type="search" name="s" class="search-field" value="" placeholder="flexbox">
+
+      <button type="submit" class="button button-header search-button">
+        <svg class="icon-search" width="26px" height="26px">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+      </button>
+
+    </form>
+
+  </div>
+
+</header>
+
+    <div class="all-site-wrap">
+  
+    <nav class="main-nav" id="main-nav">
+
+  <ul>
+    <li class="home">
+      <a href="/">
+        <svg class="icon-nav-home" width="26px" height="26px">
+          <use xlink:href="#icon-nav-home"></use>
+        </svg>
+        <span>Home</span>
+      </a>
+    </li>
+    <li class="videos">
+      <a href="/video-screencasts/">
+        <svg class="icon-nav-video" width="26px" height="26px">
+          <use xlink:href="#icon-nav-video"></use>
+        </svg>
+        <span>Videos</span>
+      </a>
+    </li>
+    <li class="almanac">
+      <a href="/almanac/">
+        <svg class="icon-nav-almanac" width="26px" height="26px">
+          <use xlink:href="#icon-nav-almanac"></use>
+        </svg>
+        <span>Almanac</span>
+      </a>
+    </li>
+    <li class="gallery">
+      <a href="/gallery/">
+        <svg class="icon-nav-gallery" width="26px" height="26px">
+          <use xlink:href="#icon-nav-gallery"></use>
+        </svg>
+        <span>Gallery</span>
+      </a>
+    </li>
+    <li class="snippets">
+      <a href="/snippets/">
+        <svg class="icon-nav-snippets" width="26px" height="26px">
+          <use xlink:href="#icon-nav-snippets"></use>
+        </svg>
+        <span>Snippets</span>
+      </a>
+    </li>
+    <li class="forums">
+      <a href="/forums/">
+        <svg class="icon-nav-forums" width="26px" height="26px">
+          <use xlink:href="#icon-nav-forums"></use>
+        </svg>
+        <span>Forums</span>
+      </a>
+    </li>
+    <li class="newsletter">
+      <a href="/newsletters/">
+        <svg class="icon-nav-newsletter" width="26px" height="26px">
+          <use xlink:href="#icon-nav-newsletter"></use>
+        </svg>
+        <span>Newsletter</span>
+      </a>
+    </li>
+    <li class="jobs">
+      <a href="/jobs/">
+        <svg class="icon-nav-jobs" width="26px" height="26px">
+          <use xlink:href="#icon-nav-jobs"></use>
+        </svg>
+        <span>Jobs</span>
+      </a>
+    </li>
+    <li class="guides">
+      <a href="/guides/">
+        <svg class="icon-nav-guide" width="26px" height="26px">
+          <use xlink:href="#icon-nav-guide"></use>
+        </svg>
+        <span>Guides</span>
+      </a>
+    </li>
+    <li class="shop">
+      <a href="/shop/">
+        <svg class="icon-nav-shop" width="26px" height="26px">
+          <use xlink:href="#icon-nav-shop"></use>
+        </svg>
+        <span>Shop</span>
+      </a>
+    </li>
+  </ul>
+
+</nav>
+<div class="page-wrap">
+
+  <header class="mega-header breadcrumbs-header breadcrumbs-last-updated" id="snippets-breadcrumbs">
+
+    <span><span xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb"><a href="https://css-tricks.com/snippets/" rel="v:url" property="v:title">Code Snippets</a> » <span rel="v:child" typeof="v:Breadcrumb"><a href="https://css-tricks.com/snippets/css/" rel="v:url" property="v:title">CSS</a> » <strong class="breadcrumb_last">Named Colors and Hex Equivalents</strong></span></span></span></span>
+  </header>
+
+  <p class="author-byline">
+
+    By
+    <a href="https://css-tricks.com/author/chriscoyier/">
+      <span class="p-author">
+        Chris Coyier      </span>
+    </a>
+    Last Updated On
+    <time datetime="2012-01-29" class="dt-published">
+      January 29, 2012    </time>
+
+    
+  </p>
+
+  <article id="post-16119">
+
+    <h1 class="screen-reader">Named Colors and Hex Equivalents</h1>
+
+    <div class="article-content">
+
+      <table id="color-table">
+<tr>
+<th>Color Name</th>
+<th>HEX</th>
+<th>Color</th>
+</tr>
+<tr>
+<td><a href="#AliceBlue">AliceBlue</a>&nbsp;</td>
+<td><a href="#F0F8FF">#F0F8FF</a></td>
+<td style="background: #F0F8FF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#AntiqueWhite">AntiqueWhite</a>&nbsp;</td>
+<td><a href="#FAEBD7">#FAEBD7</a></td>
+<td style="background: #FAEBD7">&nbsp;</td>
+</tr
+
+
+
+<tr>
+<td><a href="#Aqua">Aqua</a>&nbsp;</td>
+<td><a href="#00FFFF">#00FFFF</a></td>
+<td style="background: #00FFFF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Aquamarine">Aquamarine</a>&nbsp;</td>
+<td><a href="#7FFFD4">#7FFFD4</a></td>
+<td style="background: #7FFFD4">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Azure">Azure</a>&nbsp;</td>
+<td><a href="#F0FFFF">#F0FFFF</a></td>
+<td style="background: #F0FFFF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Beige">Beige</a>&nbsp;</td>
+<td><a href="#F5F5DC">#F5F5DC</a></td>
+<td style="background: #F5F5DC">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Bisque">Bisque</a>&nbsp;</td>
+<td><a href="#FFE4C4">#FFE4C4</a></td>
+<td style="background: #FFE4C4">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Black">Black</a>&nbsp;</td>
+<td><a href="#000000">#000000</a></td>
+<td style="background: #000000">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#BlanchedAlmond">BlanchedAlmond</a>&nbsp;</td>
+<td><a href="#FFEBCD">#FFEBCD</a></td>
+<td style="background: #FFEBCD">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Blue">Blue</a>&nbsp;</td>
+<td><a href="#0000FF">#0000FF</a></td>
+<td style="background: #0000FF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#BlueViolet">BlueViolet</a>&nbsp;</td>
+<td><a href="#8A2BE2">#8A2BE2</a></td>
+<td style="background: #8A2BE2">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Brown">Brown</a>&nbsp;</td>
+<td><a href="#A52A2A">#A52A2A</a></td>
+<td style="background: #A52A2A">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#BurlyWood">BurlyWood</a>&nbsp;</td>
+<td><a href="#DEB887">#DEB887</a></td>
+<td style="background: #DEB887">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#CadetBlue">CadetBlue</a>&nbsp;</td>
+<td><a href="#5F9EA0">#5F9EA0</a></td>
+<td style="background: #5F9EA0">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Chartreuse">Chartreuse</a>&nbsp;</td>
+<td><a href="#7FFF00">#7FFF00</a></td>
+<td style="background: #7FFF00">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Chocolate">Chocolate</a>&nbsp;</td>
+<td><a href="#D2691E">#D2691E</a></td>
+<td style="background: #D2691E">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Coral">Coral</a>&nbsp;</td>
+<td><a href="#FF7F50">#FF7F50</a></td>
+<td style="background: #FF7F50">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#CornflowerBlue">CornflowerBlue</a>&nbsp;</td>
+<td><a href="#6495ED">#6495ED</a></td>
+<td style="background: #6495ED">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Cornsilk">Cornsilk</a>&nbsp;</td>
+<td><a href="#FFF8DC">#FFF8DC</a></td>
+<td style="background: #FFF8DC">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Crimson">Crimson</a>&nbsp;</td>
+<td><a href="#DC143C">#DC143C</a></td>
+<td style="background: #DC143C">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Cyan">Cyan</a>&nbsp;</td>
+<td><a href="#00FFFF">#00FFFF</a></td>
+<td style="background: #00FFFF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkBlue">DarkBlue</a>&nbsp;</td>
+<td><a href="#00008B">#00008B</a></td>
+<td style="background: #00008B">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkCyan">DarkCyan</a>&nbsp;</td>
+<td><a href="#008B8B">#008B8B</a></td>
+<td style="background: #008B8B">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkGoldenRod">DarkGoldenRod</a>&nbsp;</td>
+<td><a href="#B8860B">#B8860B</a></td>
+<td style="background: #B8860B">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkGray">DarkGray</a>&nbsp;</td>
+<td><a href="#A9A9A9">#A9A9A9</a></td>
+<td style="background: #A9A9A9">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkGrey">DarkGrey</a>&nbsp;</td>
+<td><a href="#A9A9A9">#A9A9A9</a></td>
+<td style="background: #A9A9A9">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkGreen">DarkGreen</a>&nbsp;</td>
+<td><a href="#006400">#006400</a></td>
+<td style="background: #006400">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkKhaki">DarkKhaki</a>&nbsp;</td>
+<td><a href="#BDB76B">#BDB76B</a></td>
+<td style="background: #BDB76B">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkMagenta">DarkMagenta</a>&nbsp;</td>
+<td><a href="#8B008B">#8B008B</a></td>
+<td style="background: #8B008B">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkOliveGreen">DarkOliveGreen</a>&nbsp;</td>
+<td><a href="#556B2F">#556B2F</a></td>
+<td style="background: #556B2F">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Darkorange">Darkorange</a>&nbsp;</td>
+<td><a href="#FF8C00">#FF8C00</a></td>
+<td style="background: #FF8C00">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkOrchid">DarkOrchid</a>&nbsp;</td>
+<td><a href="#9932CC">#9932CC</a></td>
+<td style="background: #9932CC">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkRed">DarkRed</a>&nbsp;</td>
+<td><a href="#8B0000">#8B0000</a></td>
+<td style="background: #8B0000">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkSalmon">DarkSalmon</a>&nbsp;</td>
+<td><a href="#E9967A">#E9967A</a></td>
+<td style="background: #E9967A">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkSeaGreen">DarkSeaGreen</a>&nbsp;</td>
+<td><a href="#8FBC8F">#8FBC8F</a></td>
+<td style="background: #8FBC8F">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkSlateBlue">DarkSlateBlue</a>&nbsp;</td>
+<td><a href="#483D8B">#483D8B</a></td>
+<td style="background: #483D8B">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkSlateGray">DarkSlateGray</a>&nbsp;</td>
+<td><a href="#2F4F4F">#2F4F4F</a></td>
+<td style="background: #2F4F4F">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkSlateGrey">DarkSlateGrey</a>&nbsp;</td>
+<td><a href="#2F4F4F">#2F4F4F</a></td>
+<td style="background: #2F4F4F">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkTurquoise">DarkTurquoise</a>&nbsp;</td>
+<td><a href="#00CED1">#00CED1</a></td>
+<td style="background: #00CED1">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DarkViolet">DarkViolet</a>&nbsp;</td>
+<td><a href="#9400D3">#9400D3</a></td>
+<td style="background: #9400D3">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DeepPink">DeepPink</a>&nbsp;</td>
+<td><a href="#FF1493">#FF1493</a></td>
+<td style="background: #FF1493">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DeepSkyBlue">DeepSkyBlue</a>&nbsp;</td>
+<td><a href="#00BFFF">#00BFFF</a></td>
+<td style="background: #00BFFF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DimGray">DimGray</a>&nbsp;</td>
+<td><a href="#696969">#696969</a></td>
+<td style="background: #696969">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DimGrey">DimGrey</a>&nbsp;</td>
+<td><a href="#696969">#696969</a></td>
+<td style="background: #696969">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#DodgerBlue">DodgerBlue</a>&nbsp;</td>
+<td><a href="#1E90FF">#1E90FF</a></td>
+<td style="background: #1E90FF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#FireBrick">FireBrick</a>&nbsp;</td>
+<td><a href="#B22222">#B22222</a></td>
+<td style="background: #B22222">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#FloralWhite">FloralWhite</a>&nbsp;</td>
+<td><a href="#FFFAF0">#FFFAF0</a></td>
+<td style="background: #FFFAF0">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#ForestGreen">ForestGreen</a>&nbsp;</td>
+<td><a href="#228B22">#228B22</a></td>
+<td style="background: #228B22">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Fuchsia">Fuchsia</a>&nbsp;</td>
+<td><a href="#FF00FF">#FF00FF</a></td>
+<td style="background: #FF00FF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Gainsboro">Gainsboro</a>&nbsp;</td>
+<td><a href="#DCDCDC">#DCDCDC</a></td>
+<td style="background: #DCDCDC">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#GhostWhite">GhostWhite</a>&nbsp;</td>
+<td><a href="#F8F8FF">#F8F8FF</a></td>
+<td style="background: #F8F8FF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Gold">Gold</a>&nbsp;</td>
+<td><a href="#FFD700">#FFD700</a></td>
+<td style="background: #FFD700">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#GoldenRod">GoldenRod</a>&nbsp;</td>
+<td><a href="#DAA520">#DAA520</a></td>
+<td style="background: #DAA520">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Gray">Gray</a>&nbsp;</td>
+<td><a href="#808080">#808080</a></td>
+<td style="background: #808080">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Grey">Grey</a>&nbsp;</td>
+<td><a href="#808080">#808080</a></td>
+<td style="background: #808080">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Green">Green</a>&nbsp;</td>
+<td><a href="#008000">#008000</a></td>
+<td style="background: #008000">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#GreenYellow">GreenYellow</a>&nbsp;</td>
+<td><a href="#ADFF2F">#ADFF2F</a></td>
+<td style="background: #ADFF2F">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#HoneyDew">HoneyDew</a>&nbsp;</td>
+<td><a href="#F0FFF0">#F0FFF0</a></td>
+<td style="background: #F0FFF0">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#HotPink">HotPink</a>&nbsp;</td>
+<td><a href="#FF69B4">#FF69B4</a></td>
+<td style="background: #FF69B4">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#IndianRed ">IndianRed </a>&nbsp;</td>
+<td><a href="#CD5C5C">#CD5C5C</a></td>
+<td style="background: #CD5C5C">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Indigo  ">Indigo  </a>&nbsp;</td>
+<td><a href="#4B0082">#4B0082</a></td>
+<td style="background: #4B0082">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Ivory">Ivory</a>&nbsp;</td>
+<td><a href="#FFFFF0">#FFFFF0</a></td>
+<td style="background: #FFFFF0">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Khaki">Khaki</a>&nbsp;</td>
+<td><a href="#F0E68C">#F0E68C</a></td>
+<td style="background: #F0E68C">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Lavender">Lavender</a>&nbsp;</td>
+<td><a href="#E6E6FA">#E6E6FA</a></td>
+<td style="background: #E6E6FA">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LavenderBlush">LavenderBlush</a>&nbsp;</td>
+<td><a href="#FFF0F5">#FFF0F5</a></td>
+<td style="background: #FFF0F5">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LawnGreen">LawnGreen</a>&nbsp;</td>
+<td><a href="#7CFC00">#7CFC00</a></td>
+<td style="background: #7CFC00">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LemonChiffon">LemonChiffon</a>&nbsp;</td>
+<td><a href="#FFFACD">#FFFACD</a></td>
+<td style="background: #FFFACD">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LightBlue">LightBlue</a>&nbsp;</td>
+<td><a href="#ADD8E6">#ADD8E6</a></td>
+<td style="background: #ADD8E6">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LightCoral">LightCoral</a>&nbsp;</td>
+<td><a href="#F08080">#F08080</a></td>
+<td style="background: #F08080">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LightCyan">LightCyan</a>&nbsp;</td>
+<td><a href="#E0FFFF">#E0FFFF</a></td>
+<td style="background: #E0FFFF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LightGoldenRodYellow">LightGoldenRodYellow</a>&nbsp;</td>
+<td><a href="#FAFAD2">#FAFAD2</a></td>
+<td style="background: #FAFAD2">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LightGray">LightGray</a>&nbsp;</td>
+<td><a href="#D3D3D3">#D3D3D3</a></td>
+<td style="background: #D3D3D3">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LightGrey">LightGrey</a>&nbsp;</td>
+<td><a href="#D3D3D3">#D3D3D3</a></td>
+<td style="background: #D3D3D3">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LightGreen">LightGreen</a>&nbsp;</td>
+<td><a href="#90EE90">#90EE90</a></td>
+<td style="background: #90EE90">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LightPink">LightPink</a>&nbsp;</td>
+<td><a href="#FFB6C1">#FFB6C1</a></td>
+<td style="background: #FFB6C1">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LightSalmon">LightSalmon</a>&nbsp;</td>
+<td><a href="#FFA07A">#FFA07A</a></td>
+<td style="background: #FFA07A">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LightSeaGreen">LightSeaGreen</a>&nbsp;</td>
+<td><a href="#20B2AA">#20B2AA</a></td>
+<td style="background: #20B2AA">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LightSkyBlue">LightSkyBlue</a>&nbsp;</td>
+<td><a href="#87CEFA">#87CEFA</a></td>
+<td style="background: #87CEFA">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LightSlateGray">LightSlateGray</a>&nbsp;</td>
+<td><a href="#778899">#778899</a></td>
+<td style="background: #778899">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LightSlateGrey">LightSlateGrey</a>&nbsp;</td>
+<td><a href="#778899">#778899</a></td>
+<td style="background: #778899">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LightSteelBlue">LightSteelBlue</a>&nbsp;</td>
+<td><a href="#B0C4DE">#B0C4DE</a></td>
+<td style="background: #B0C4DE">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LightYellow">LightYellow</a>&nbsp;</td>
+<td><a href="#FFFFE0">#FFFFE0</a></td>
+<td style="background: #FFFFE0">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Lime">Lime</a>&nbsp;</td>
+<td><a href="#00FF00">#00FF00</a></td>
+<td style="background: #00FF00">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#LimeGreen">LimeGreen</a>&nbsp;</td>
+<td><a href="#32CD32">#32CD32</a></td>
+<td style="background: #32CD32">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Linen">Linen</a>&nbsp;</td>
+<td><a href="#FAF0E6">#FAF0E6</a></td>
+<td style="background: #FAF0E6">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Magenta">Magenta</a>&nbsp;</td>
+<td><a href="#FF00FF">#FF00FF</a></td>
+<td style="background: #FF00FF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Maroon">Maroon</a>&nbsp;</td>
+<td><a href="#800000">#800000</a></td>
+<td style="background: #800000">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#MediumAquaMarine">MediumAquaMarine</a>&nbsp;</td>
+<td><a href="#66CDAA">#66CDAA</a></td>
+<td style="background: #66CDAA">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#MediumBlue">MediumBlue</a>&nbsp;</td>
+<td><a href="#0000CD">#0000CD</a></td>
+<td style="background: #0000CD">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#MediumOrchid">MediumOrchid</a>&nbsp;</td>
+<td><a href="#BA55D3">#BA55D3</a></td>
+<td style="background: #BA55D3">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#MediumPurple">MediumPurple</a>&nbsp;</td>
+<td><a href="#9370D8">#9370D8</a></td>
+<td style="background: #9370D8">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#MediumSeaGreen">MediumSeaGreen</a>&nbsp;</td>
+<td><a href="#3CB371">#3CB371</a></td>
+<td style="background: #3CB371">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#MediumSlateBlue">MediumSlateBlue</a>&nbsp;</td>
+<td><a href="#7B68EE">#7B68EE</a></td>
+<td style="background: #7B68EE">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#MediumSpringGreen">MediumSpringGreen</a>&nbsp;</td>
+<td><a href="#00FA9A">#00FA9A</a></td>
+<td style="background: #00FA9A">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#MediumTurquoise">MediumTurquoise</a>&nbsp;</td>
+<td><a href="#48D1CC">#48D1CC</a></td>
+<td style="background: #48D1CC">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#MediumVioletRed">MediumVioletRed</a>&nbsp;</td>
+<td><a href="#C71585">#C71585</a></td>
+<td style="background: #C71585">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#MidnightBlue">MidnightBlue</a>&nbsp;</td>
+<td><a href="#191970">#191970</a></td>
+<td style="background: #191970">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#MintCream">MintCream</a>&nbsp;</td>
+<td><a href="#F5FFFA">#F5FFFA</a></td>
+<td style="background: #F5FFFA">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#MistyRose">MistyRose</a>&nbsp;</td>
+<td><a href="#FFE4E1">#FFE4E1</a></td>
+<td style="background: #FFE4E1">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Moccasin">Moccasin</a>&nbsp;</td>
+<td><a href="#FFE4B5">#FFE4B5</a></td>
+<td style="background: #FFE4B5">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#NavajoWhite">NavajoWhite</a>&nbsp;</td>
+<td><a href="#FFDEAD">#FFDEAD</a></td>
+<td style="background: #FFDEAD">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Navy">Navy</a>&nbsp;</td>
+<td><a href="#000080">#000080</a></td>
+<td style="background: #000080">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#OldLace">OldLace</a>&nbsp;</td>
+<td><a href="#FDF5E6">#FDF5E6</a></td>
+<td style="background: #FDF5E6">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Olive">Olive</a>&nbsp;</td>
+<td><a href="#808000">#808000</a></td>
+<td style="background: #808000">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#OliveDrab">OliveDrab</a>&nbsp;</td>
+<td><a href="#6B8E23">#6B8E23</a></td>
+<td style="background: #6B8E23">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Orange">Orange</a>&nbsp;</td>
+<td><a href="#FFA500">#FFA500</a></td>
+<td style="background: #FFA500">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#OrangeRed">OrangeRed</a>&nbsp;</td>
+<td><a href="#FF4500">#FF4500</a></td>
+<td style="background: #FF4500">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Orchid">Orchid</a>&nbsp;</td>
+<td><a href="#DA70D6">#DA70D6</a></td>
+<td style="background: #DA70D6">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#PaleGoldenRod">PaleGoldenRod</a>&nbsp;</td>
+<td><a href="#EEE8AA">#EEE8AA</a></td>
+<td style="background: #EEE8AA">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#PaleGreen">PaleGreen</a>&nbsp;</td>
+<td><a href="#98FB98">#98FB98</a></td>
+<td style="background: #98FB98">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#PaleTurquoise">PaleTurquoise</a>&nbsp;</td>
+<td><a href="#AFEEEE">#AFEEEE</a></td>
+<td style="background: #AFEEEE">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#PaleVioletRed">PaleVioletRed</a>&nbsp;</td>
+<td><a href="#D87093">#D87093</a></td>
+<td style="background: #D87093">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#PapayaWhip">PapayaWhip</a>&nbsp;</td>
+<td><a href="#FFEFD5">#FFEFD5</a></td>
+<td style="background: #FFEFD5">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#PeachPuff">PeachPuff</a>&nbsp;</td>
+<td><a href="#FFDAB9">#FFDAB9</a></td>
+<td style="background: #FFDAB9">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Peru">Peru</a>&nbsp;</td>
+<td><a href="#CD853F">#CD853F</a></td>
+<td style="background: #CD853F">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Pink">Pink</a>&nbsp;</td>
+<td><a href="#FFC0CB">#FFC0CB</a></td>
+<td style="background: #FFC0CB">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Plum">Plum</a>&nbsp;</td>
+<td><a href="#DDA0DD">#DDA0DD</a></td>
+<td style="background: #DDA0DD">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#PowderBlue">PowderBlue</a>&nbsp;</td>
+<td><a href="#B0E0E6">#B0E0E6</a></td>
+<td style="background: #B0E0E6">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Purple">Purple</a>&nbsp;</td>
+<td><a href="#800080">#800080</a></td>
+<td style="background: #800080">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Red">Red</a>&nbsp;</td>
+<td><a href="#FF0000">#FF0000</a></td>
+<td style="background: #FF0000">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#RosyBrown">RosyBrown</a>&nbsp;</td>
+<td><a href="#BC8F8F">#BC8F8F</a></td>
+<td style="background: #BC8F8F">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#RoyalBlue">RoyalBlue</a>&nbsp;</td>
+<td><a href="#4169E1">#4169E1</a></td>
+<td style="background: #4169E1">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#SaddleBrown">SaddleBrown</a>&nbsp;</td>
+<td><a href="#8B4513">#8B4513</a></td>
+<td style="background: #8B4513">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Salmon">Salmon</a>&nbsp;</td>
+<td><a href="#FA8072">#FA8072</a></td>
+<td style="background: #FA8072">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#SandyBrown">SandyBrown</a>&nbsp;</td>
+<td><a href="#F4A460">#F4A460</a></td>
+<td style="background: #F4A460">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#SeaGreen">SeaGreen</a>&nbsp;</td>
+<td><a href="#2E8B57">#2E8B57</a></td>
+<td style="background: #2E8B57">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#SeaShell">SeaShell</a>&nbsp;</td>
+<td><a href="#FFF5EE">#FFF5EE</a></td>
+<td style="background: #FFF5EE">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Sienna">Sienna</a>&nbsp;</td>
+<td><a href="#A0522D">#A0522D</a></td>
+<td style="background: #A0522D">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Silver">Silver</a>&nbsp;</td>
+<td><a href="#C0C0C0">#C0C0C0</a></td>
+<td style="background: #C0C0C0">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#SkyBlue">SkyBlue</a>&nbsp;</td>
+<td><a href="#87CEEB">#87CEEB</a></td>
+<td style="background: #87CEEB">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#SlateBlue">SlateBlue</a>&nbsp;</td>
+<td><a href="#6A5ACD">#6A5ACD</a></td>
+<td style="background: #6A5ACD">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#SlateGray">SlateGray</a>&nbsp;</td>
+<td><a href="#708090">#708090</a></td>
+<td style="background: #708090">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#SlateGrey">SlateGrey</a>&nbsp;</td>
+<td><a href="#708090">#708090</a></td>
+<td style="background: #708090">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Snow">Snow</a>&nbsp;</td>
+<td><a href="#FFFAFA">#FFFAFA</a></td>
+<td style="background: #FFFAFA">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#SpringGreen">SpringGreen</a>&nbsp;</td>
+<td><a href="#00FF7F">#00FF7F</a></td>
+<td style="background: #00FF7F">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#SteelBlue">SteelBlue</a>&nbsp;</td>
+<td><a href="#4682B4">#4682B4</a></td>
+<td style="background: #4682B4">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Tan">Tan</a>&nbsp;</td>
+<td><a href="#D2B48C">#D2B48C</a></td>
+<td style="background: #D2B48C">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Teal">Teal</a>&nbsp;</td>
+<td><a href="#008080">#008080</a></td>
+<td style="background: #008080">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Thistle">Thistle</a>&nbsp;</td>
+<td><a href="#D8BFD8">#D8BFD8</a></td>
+<td style="background: #D8BFD8">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Tomato">Tomato</a>&nbsp;</td>
+<td><a href="#FF6347">#FF6347</a></td>
+<td style="background: #FF6347">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Turquoise">Turquoise</a>&nbsp;</td>
+<td><a href="#40E0D0">#40E0D0</a></td>
+<td style="background: #40E0D0">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Violet">Violet</a>&nbsp;</td>
+<td><a href="#EE82EE">#EE82EE</a></td>
+<td style="background: #EE82EE">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Wheat">Wheat</a>&nbsp;</td>
+<td><a href="#F5DEB3">#F5DEB3</a></td>
+<td style="background: #F5DEB3">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#White">White</a>&nbsp;</td>
+<td><a href="#FFFFFF">#FFFFFF</a></td>
+<td style="background: #FFFFFF">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#WhiteSmoke">WhiteSmoke</a>&nbsp;</td>
+<td><a href="#F5F5F5">#F5F5F5</a></td>
+<td style="background: #F5F5F5">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#Yellow">Yellow</a>&nbsp;</td>
+<td><a href="#FFFF00">#FFFF00</a></td>
+<td style="background: #FFFF00">&nbsp;</td>
+</tr>
+<tr>
+<td><a href="#YellowGreen">YellowGreen</a>&nbsp;</td>
+<td><a href="#9ACD32">#9ACD32</a></td>
+<td style="background: #9ACD32">&nbsp;</td>
+</tr>
+</table>
+
+    </div>
+
+  </article>
+
+  <div class="end-of-article-ads">
+      <div class="bsap-doubles side-by-side">
+      <div id="bsap_1250418" class="bsarocks bsap_3469a2a501a9e18091036aa0c89f9dcb"></div>
+    </div>
+  </div>
+
+<div class="comments-col">
+      <div class="module-comments">
+      <section id="comments">
+
+
+
+  <h2 class="comments-title">
+    Comments
+  </h2>
+
+  <p class="center hide" id="show-comments-wrap">
+    <button id="show-comments-button" class="button">Show Comments</button>
+  </p>
+
+  <ol class="commentlist group" id="commentlist">
+    
+    <li class="comment even thread-even depth-1 buried" id="li-comment-146076">
+
+      <div class="grid group comment-wrap" id="comment-146076">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/a30aabafbe931ae72f1edb4adfcb3a83?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">M!l</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-146076"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-01-29T12:44:28+00:00">January 29, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>wooow .. really nice job</p>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=146076#respond' onclick='return addComment.moveForm( "comment-146076", "146076", "respond", "16119" )' aria-label='Reply to M!l'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-146077">
+
+      <div class="grid group comment-wrap" id="comment-146077">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/c2c1340b45c2a86b9839d9f80f4135cc?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Eddy</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-146077"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-01-29T12:46:17+00:00">January 29, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Would be nice if it was possible to arrange it by hex value, in case you know approximately what color you want but not the exact one.</p>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=146077#respond' onclick='return addComment.moveForm( "comment-146077", "146077", "respond", "16119" )' aria-label='Reply to Eddy'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment even depth-2" id="li-comment-1598185">
+
+      <div class="grid group comment-wrap" id="comment-1598185">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/420d2e43479a79088b2959d9184b7cf8?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Raxin</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-1598185"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-11-23T11:54:00+00:00">November 23, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Here&#8217;s a list sorted by hex:<br />
+<a href="http://www.w3schools.com/cssref/css_colorsfull.asp" rel="nofollow">http://www.w3schools.com/cssref/css_colorsfull.asp</a></p>
+<p>They still look out of order in hex too though. It might be interesting to sort by hue, but then where would you put the grays, and how would you deal with different saturation levels of the same hue?</p>
+<p>The problem with trying to sort colors in any kind of list is that lists are 2D, and colorspace is 3D (not including the transparency channel), so no single list is sufficient.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt depth-2" id="li-comment-1598186">
+
+      <div class="grid group comment-wrap" id="comment-1598186">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/420d2e43479a79088b2959d9184b7cf8?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Raxin</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-1598186"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-11-23T13:53:02+00:00">November 23, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>I meant lists are 1D.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even depth-2" id="li-comment-1600543">
+
+      <div class="grid group comment-wrap" id="comment-1600543">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/936b90dfcee02c851bb4d98feb05b05d?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Yuriy Linnyk</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-1600543"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2016-03-26T04:50:40+00:00">March 26, 2016</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>@Raxin, sorting &#8220;by hex&#8221; isn&#8217;t done right on that page from any viewpoint, they ordered the colors by converting hex as if it was one value, while in fact the hex is three values (red, green, blue). In other words, they made a mistake to treat something like &#8220;#bada55&#8221; as one hexadecimal number, while in fact that is &#8220;ba&#8221; value of red, &#8220;da&#8221; value of green, and &#8220;55&#8221; value of blue.<br />
+And I know it how? I was playing around with sorting the colors myself and ran into the same mistake at first attempt, and that was the same ordering as on that page. Here&#8217;s my playground: <a href="http://colors.yur.io" rel="nofollow">http://colors.yur.io</a> feel free to look at the source.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-146085">
+
+      <div class="grid group comment-wrap" id="comment-146085">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/1affa9d531d6d4661f2747f8a4c60c3f?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">_John_</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-146085"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-01-29T13:34:24+00:00">January 29, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Nice job, i like how every single one of those colors are vibrant and actually look really good. I feel the urge to use &#8216;BurlyWood&#8217; for a background or something now.</p>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=146085#respond' onclick='return addComment.moveForm( "comment-146085", "146085", "respond", "16119" )' aria-label='Reply to _John_'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-146086">
+
+      <div class="grid group comment-wrap" id="comment-146086">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/12df17c12e214c6a8534e2b4ae24b229?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">al</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-146086"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-01-29T13:34:54+00:00">January 29, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>w3schools has a similar table <a href="http://www.w3schools.com/html/html_colornames.asp" rel="nofollow">http://www.w3schools.com/html/html_colornames.asp</a></p>
+<p>this is the one I ran across first</p>
+<p>Al</p>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=146086#respond' onclick='return addComment.moveForm( "comment-146086", "146086", "respond", "16119" )' aria-label='Reply to al'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1 buried" id="li-comment-146092">
+
+      <div class="grid group comment-wrap" id="comment-146092">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/dd16015ae97c4d615007b0490b84c4ba?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Philipp</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-146092"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-01-29T15:37:40+00:00">January 29, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Great job Chris, thanks for the list!</p>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=146092#respond' onclick='return addComment.moveForm( "comment-146092", "146092", "respond", "16119" )' aria-label='Reply to Philipp'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1 buried" id="li-comment-146159">
+
+      <div class="grid group comment-wrap" id="comment-146159">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/8ebfc855d92f761488726a781faadab9?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Vladimir Varbanov</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-146159"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-01-30T02:09:59+00:00">January 30, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>This is really useful &#8211; thanks a lot &#8211; in my bookmarks!</p>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=146159#respond' onclick='return addComment.moveForm( "comment-146159", "146159", "respond", "16119" )' aria-label='Reply to Vladimir Varbanov'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-146212">
+
+      <div class="grid group comment-wrap" id="comment-146212">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/c78fafec41534f7457ca4f9f33635477?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Caleb</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-146212"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-01-30T06:26:50+00:00">January 30, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Nice! It would be cool to add the hsla there as well&#8230;</p>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=146212#respond' onclick='return addComment.moveForm( "comment-146212", "146212", "respond", "16119" )' aria-label='Reply to Caleb'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1 buried" id="li-comment-327133">
+
+      <div class="grid group comment-wrap" id="comment-327133">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/dd2c9d6826478b91afb9ea27f13ff1dd?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">benny</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-327133"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-03-29T03:51:13+00:00">March 29, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>cool!!</p>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=327133#respond' onclick='return addComment.moveForm( "comment-327133", "327133", "respond", "16119" )' aria-label='Reply to benny'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1 buried" id="li-comment-501382">
+
+      <div class="grid group comment-wrap" id="comment-501382">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/7f813f1f1e2c3e8c30a5bb591419d312?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Dennis Dewey</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-501382"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-08-02T03:58:42+00:00">August 2, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>I created a Sublime Text 2 Reg Replace pattern that finds all of the named css colors and replaces them with the hex value. This needs the Reg Replace plugin installed in order for it to work.</p>
+<style>.gist table { margin-bottom: 0; }</style>
+<div class="gist-oembed" data-gist="primitivehuman/6138823.json"></div>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=501382#respond' onclick='return addComment.moveForm( "comment-501382", "501382", "respond", "16119" )' aria-label='Reply to Dennis Dewey'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1584444">
+
+      <div class="grid group comment-wrap" id="comment-1584444">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/1a623ebd583c40ea126be92780f32d1a?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Shaz3e</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-1584444"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-08-15T17:36:33+00:00">August 15, 2014</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>I managed all css colors with their name and made a single file to use any of CSS color easily for text and background. Have a look at it here -&gt; <a href="http://shaz3e.github.io/S3-Colors/" rel="nofollow">http://shaz3e.github.io/S3-Colors/</a></p>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=1584444#respond' onclick='return addComment.moveForm( "comment-1584444", "1584444", "respond", "16119" )' aria-label='Reply to Shaz3e'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-1585868">
+
+      <div class="grid group comment-wrap" id="comment-1585868">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/efd7f39147f196ac93fefde0dfbb3272?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">FrankB</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-1585868"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-10-12T22:15:56+00:00">October 12, 2014</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Random question. Does anyone know the story of why fuchsia/magenta and aqua/cyan are repeats of the same color (#FF00FF and #00FFFF respectively).  So in reality there are only 138 colors?<br />
+It&#8217;s not important, but I have always wondered how that came to pass&#8230;</p>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=1585868#respond' onclick='return addComment.moveForm( "comment-1585868", "1585868", "respond", "16119" )' aria-label='Reply to FrankB'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment even depth-2" id="li-comment-1588216">
+
+      <div class="grid group comment-wrap" id="comment-1588216">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/60d4b058911fecba8db4728102597973?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Tyson N.</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-1588216"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-01-06T16:01:39+00:00">January 6, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Same reason gray/grey (and variants thereof, e.g. darkslategr[a|e]y) are equivalent names; different people use different spellings or names to refer to the same color. In particular, &#8220;fuchsia&#8221; and &#8220;aqua&#8221; were among the 16 color names defined in HTML 3.0, which in turn came from the standard names referenced in the MS Windows default VGA 4-bit color palette; however, the additive color model (RGB) has long termed the combination of maximum red and blue light as &#8220;magenta&#8221;, and the combination of maximum green and blue light as &#8220;cyan&#8221;, which are more broadly known as technical terms for those specific definitions, so &#8220;fuchsia&#8221; and &#8220;aqua&#8221; continue to be supported basically for legacy purposes dating back to HTML 3 and early Windows.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1586239">
+
+      <div class="grid group comment-wrap" id="comment-1586239">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/826885c78c460ef05d8449c5e8e9681c?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Francis Sunday</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-1586239"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-10-27T05:40:38+00:00">October 27, 2014</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Thanks  this just helped me in my project on GitHub i call weblooks.css you can fork my work via this link <a href="http://www.github.com/frinteractive/weblooks.css" rel="nofollow">http://www.github.com/frinteractive/weblooks.css</a></p>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=1586239#respond' onclick='return addComment.moveForm( "comment-1586239", "1586239", "respond", "16119" )' aria-label='Reply to Francis Sunday'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-1594358">
+
+      <div class="grid group comment-wrap" id="comment-1594358">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/b4b0e2e2f8a15499752aba70f1aa433e?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Mark</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-1594358"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-05-09T18:37:11+00:00">May 9, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>I use Boxing.css to group style strings for &#8216;color-names&#8217;, &#8216;color-background&#8217; and &#8216;color-foreground&#8217;. CSS3 boxed style is always helpful, so great starter from Shaz at IO. But there&#8217;s more, each with its own flair. Mozilla as always goes all the way (RGBdec, RGB%, HSL, HEX, SHORT, and mountains of explanation).<br />
+Resources:<br />
+<a href="http://dev.w3.org/csswg/css-color/" rel="nofollow">http://dev.w3.org/csswg/css-color/</a><br />
+<a href="http://www.w3.org/TR/SVG/types.html#ColorKeywords" rel="nofollow">http://www.w3.org/TR/SVG/types.html#ColorKeywords</a><br />
+<a href="http://meyerweb.com/eric/css/colors/" rel="nofollow">http://meyerweb.com/eric/css/colors/</a><br />
+<a href="http://www.w3schools.com/cssref/css_colornames.asp" rel="nofollow">http://www.w3schools.com/cssref/css_colornames.asp</a><br />
+<a href="http://www.w3schools.com/cssref/css_colorsfull.asp" rel="nofollow">http://www.w3schools.com/cssref/css_colorsfull.asp</a><br />
+<a href="http://www.learningwebdesign.com/colornames.html" rel="nofollow">http://www.learningwebdesign.com/colornames.html</a><br />
+<a href="http://www.cssportal.com/css3-color-names/" rel="nofollow">http://www.cssportal.com/css3-color-names/</a><br />
+<a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/" rel="nofollow">https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/</a><br />
+<a href="http://shaz3e.github.io/S3-Colors/" rel="nofollow">http://shaz3e.github.io/S3-Colors/</a><br />
+<a href="https://developer.mozilla.org/en/docs/Web/CSS/color_value" rel="nofollow">https://developer.mozilla.org/en/docs/Web/CSS/color_value</a></p>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=1594358#respond' onclick='return addComment.moveForm( "comment-1594358", "1594358", "respond", "16119" )' aria-label='Reply to Mark'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1595667">
+
+      <div class="grid group comment-wrap" id="comment-1595667">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/c2f30f7cfd8f56728ab0754c54b76cc7?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Ali</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-1595667"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-07-06T08:54:05+00:00">July 6, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p><a href="http://www.colorconversion.co" rel="nofollow">http://www.colorconversion.co</a> &#8211; I&#8217;ve recently developed this color conversion site to help developers, designers or anyone who is interested in color conversion. It is free and fun to use :)</p>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=1595667#respond' onclick='return addComment.moveForm( "comment-1595667", "1595667", "respond", "16119" )' aria-label='Reply to Ali'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-1596161">
+
+      <div class="grid group comment-wrap" id="comment-1596161">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/a21d7b723448a1395f18c2c961a82129?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">CarolColorer</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-1596161"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-07-28T05:29:38+00:00">July 28, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Why don&#8217;t these appear as expected:<br />
+lightGray<br />
+Gray<br />
+DarkGray</p>
+<p>How can a darker-gray to so much lighter than gray?</p>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=1596161#respond' onclick='return addComment.moveForm( "comment-1596161", "1596161", "respond", "16119" )' aria-label='Reply to CarolColorer'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1598193">
+
+      <div class="grid group comment-wrap" id="comment-1598193">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/d6b7e3468c4601ac7c23b70f6c7c521c?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Jesse</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-1598193"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-11-23T19:22:37+00:00">November 23, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>This reads like Patrick Bateman&#8217;s lunch.</p>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=1598193#respond' onclick='return addComment.moveForm( "comment-1598193", "1598193", "respond", "16119" )' aria-label='Reply to Jesse'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment byuser comment-author-mottie even thread-even depth-1" id="li-comment-1600397">
+
+      <div class="grid group comment-wrap" id="comment-1600397">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/9df80e51701bd6a791383150038d09e1?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Mottie</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-1600397"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2016-03-20T15:59:43+00:00">March 20, 2016</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>This list is missing &#8220;rebeccapurple&#8221;: <a href="https://css-tricks.com/rebbeccapurple-663399/" rel="nofollow">https://css-tricks.com/rebbeccapurple-663399/</a></p>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=1600397#respond' onclick='return addComment.moveForm( "comment-1600397", "1600397", "respond", "16119" )' aria-label='Reply to Mottie'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1606007">
+
+      <div class="grid group comment-wrap" id="comment-1606007">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/b0d3ab3fde1fe6990bfc0d0862bcbfe7?s=160&d=retro&r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">mkupper</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/#comment-1606007"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2017-01-09T02:47:41+00:00">January 9, 2017</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>The wrong values are listed for two of the colors.</p>
+<p>MediumPurple is listed as #9370D8.  This should be #9370DB.</p>
+<p>PaleVioletRed is listed as #D87093. This should be #DB7093.</p>
+<p>In both cases someone had entered the letter B as the digit 8 when constructing the list on this page.  The August 2, 2013 post by Dennis Dewey also has the wrong color values.</p>
+<p>I&#8217;ll second adding RebeccaPurple to the list. While it&#8217;s not an official CSS3 color it has been a part of the official CSS4 specification since June 2014 and has been supported by all of the major web browsers since 2014.<br />
+    CSS3 list <a href="https://www.w3.org/TR/css3-color/" rel="nofollow">https://www.w3.org/TR/css3-color/</a><br />
+    CSS4 list <a href="https://www.w3.org/TR/css-color-4/" rel="nofollow">https://www.w3.org/TR/css-color-4/</a> has RebeccaPurple</p>
+<p>The page should mention that the color names are case insensitive.  &#8216;YellowGreen&#8217; and &#8216;yellowgreen&#8217; are the same.</p>
+<p>While it has no affect on the displayed color the following color names are single English words and should not be CamelCased as two words in the list: Aquamarine, Goldenrod (used as part of several color names), Honeydew, and Seashell.</p>
+
+            <div class="reply">
+              <a rel='nofollow' class='comment-reply-link' href='https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/?replytocom=1606007#respond' onclick='return addComment.moveForm( "comment-1606007", "1606007", "respond", "16119" )' aria-label='Reply to mkupper'>Reply &darr;</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+  </ol>
+
+
+
+  <div id="respond" class="respond group">
+
+    
+      
+		<div id="respond" class="comment-respond">
+							<h3 id="reply-title" class="comment-reply-title">Leave a Comment					<small><a rel="nofollow" id="cancel-comment-reply-link" href="/snippets/css/named-colors-and-hex-equivalents/#respond" style="display:none;">Cancel reply</a></small>
+				</h3>
+						<form id="commentform" class="comment-form">
+				<iframe src="https://jetpack.wordpress.com/jetpack-comment/?blogid=45537868&#038;postid=16119&#038;comment_registration=0&#038;require_name_email=1&#038;stc_enabled=1&#038;stb_enabled=0&#038;show_avatars=1&#038;avatar_default=retro&#038;greeting=Leave+a+Comment&#038;greeting_reply=Leave+a+Reply+to+%25s&#038;color_scheme=light&#038;lang=en_US&#038;jetpack_version=5.8&#038;sig=ac8947e6735fd56786e902bd8b7b3bec076d791d#parent=https%3A%2F%2Fcss-tricks.com%2Fsnippets%2Fcss%2Fnamed-colors-and-hex-equivalents%2F" style="width:100%; height: 430px; border:0;" name="jetpack_remote_comment" class="jetpack_remote_comment" id="jetpack_remote_comment"></iframe>
+				<!--[if !IE]><!-->
+				<script>
+					document.addEventListener('DOMContentLoaded', function () {
+						var commentForms = document.getElementsByClassName('jetpack_remote_comment');
+						for (var i = 0; i < commentForms.length; i++) {
+							commentForms[i].allowTransparency = false;
+							commentForms[i].scrolling = 'no';
+						}
+					});
+				</script>
+				<!--<![endif]-->
+			</form>
+		</div>
+
+		
+		<input type="hidden" name="comment_parent" id="comment_parent" value="" />
+
+		
+      <div class="comment-reminders">
+
+        <div>
+          <h4>Posting Code!</h4>
+
+          <p>You may write comments in <strong>Markdown</strong>. This makes code easy to post, as you can write inline code like `&lt;div>this&lt;/div>` or multiline blocks of code in triple backtick fences (```) with double new lines before and after.</p>
+        </div>
+
+        <div>
+          <h4>Code of Conduct</h4>
+
+          <p>Absolutely anyone is welcome to submit a comment here. But not all comments will be posted. Think of it like writing a letter to the editor. All submitted comments will be read, but not all published. Published comments will be on-topic, helpful, and further the discussion or debate.</p>
+        </div>
+
+        <div>
+          <h4>Want to tell us something privately?</h4>
+
+          <p>Feel free to use our <a href="/contact/">contact form</a>. That's a great place to let us know about typos or anything off-topic.</p>
+        </div>
+
+      </div>
+
+    
+  </div>
+
+</section>    </div>
+  </div>
+</div>
+
+<aside class="entry-unrelated sidebar sidebar-right">
+
+      <div id="all-ads"></div>
+  
+</aside>
+
+
+  </div>
+
+  <footer class="site-footer footer-newsletter">
+
+    <div class="footer-section-1"></div>
+
+    <div class="footer-section-2">
+
+      <img src="https://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-16/images/get-the-newsletter.png" alt="Get the Newsletter!">
+
+      <form action="//chriscoyier.us2.list-manage.com/subscribe/post?u=155f5a9ccc4e24c318130cace&amp;id=197f127a68" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+        <p class="mc-field-group">
+          <label for="mce-EMAIL" class="screen-reader">Email Address</label>
+          <input type="email" name="EMAIL" class="required email mailchimp-email-input" id="mce-EMAIL">
+          <svg class="icon-email" width="20px" height="15px">
+            <use xlink:href="#icon-email"></use>
+          </svg>
+          <input type="submit" value="Subscribe" name="Subscribe" id="mc-embedded-subscribe" class="button subscribe-button">
+        </p>
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+        <div style="position: absolute; left: -9999px; top: -9999px"><input type="text" name="b_155f5a9ccc4e24c318130cace_197f127a68" value=""></div>
+
+      </form>
+    </div>
+
+    <div class="footer-section-3">
+      Lots of great stuff that isn't published anywhere else!
+    </div>
+
+  </footer>
+
+  <footer class="site-footer footer-mediatemple">
+
+    <div class="footer-section-1"></div>
+    <div class="footer-section-2">
+      <a href="https://mediatemple.net/landing/csstricks/?utm_source=CSS-Tricks&utm_medium=display&utm_campaign=heaeder-box"><img class="mt-img" src="https://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-16/images/mediatemple-logo-white-superwide.svg" alt="Media Temple"></a>
+    </div>
+    <div class="footer-section-3">
+      <a href="https://mediatemple.net/landing/csstricks/?utm_source=CSS-Tricks&utm_medium=display&utm_campaign=heaeder-box">CSS-Tricks web host since day one. Save 20% with code <strong>CSSTRICKS</strong>.</a>
+    </div>
+
+  </footer>
+
+  <footer class="site-footer footer-colophon">
+
+    <div class="footer-section-1">
+      <svg class="icon-footer-star" width="280px" height="280px">
+        <use xlink:href="#icon-logo-star"></use>
+      </svg>
+    </div>
+
+    <div class="footer-section-2">
+      <div>
+        <p>CSS-Tricks* is created, written by, and maintained by <a href="http://chriscoyier.net">Chris Coyier</a> and <a href="/about/">a team</a> of swell people. It is built on <a href="http://wordpress.org/">WordPress</a>, hosted by <a href="https://mediatemple.net/landing/csstricks/?utm_source=CSS-Tricks&utm_medium=display&utm_campaign=footer-link">Media Temple</a>, and the assets are served by <a href="http://tracking.maxcdn.com/c/13088/3982/378">MaxCDN</a>. It is made possible through <a href="/advertising/">sponsorships</a> from products and services we like.</p>
+
+        <p class="mega-big-time-warning"><small>*May or may not contain any actual "CSS" or "Tricks".</small></p>
+
+        <a class="twitter-follow-button" href="https://twitter.com/Real_CSS_Tricks">
+          Follow @Real_CSS_Tricks
+        </a>
+      </div>
+
+      <nav>
+        <a href="/contact/" class="footer-contact-link">Contact</a>
+        <a href="/about/">About</a>
+        <a href="/archives/">Archives</a>
+        <a href="/advertising/">Advertise</a>
+        <a href="/jobs/">Jobs</a>
+        <a href="/license/">License</a>
+        <a href="/subscription-options/">Subscribe</a>
+        <a href="/random">Random</a>
+        <a href="/guest-posting/">Guest Posting</a>
+      </nav>
+
+    </div>
+
+    <div class="footer-section-3">
+
+      <div class="module module-jobs">
+
+  <h4 class="h4">Front-End Jobs</h4>
+
+  
+  <ul class="job-list">
+
+        <li>
+            <a href="https://codepen.io/url/job/ZPjqEn">
+        <strong>
+          Chess.com        </strong>
+        is hiring a
+        Vue.js-Focused Full-stack Developer       </a>
+    </li>
+        <li>
+            <a href="https://codepen.io/url/job/ngRaJr">
+        <strong>
+          Beru Aps        </strong>
+        is hiring a
+        Front End Developer      </a>
+    </li>
+        <li>
+            <a href="https://codepen.io/url/job/nRgEvz">
+        <strong>
+          InVision AG        </strong>
+        is hiring a
+        Front End Developer      </a>
+    </li>
+    
+  </ul>
+
+  <div class="button-wrap">
+
+    <a href="/jobs/" class="button full-width-button">See More Jobs</a>
+    <a href="https://codepen.io/job/new/" class="button full-width-button">Post a Job</a>
+  </div>
+
+</div>
+    </div>
+
+  </footer>
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none"><symbol id="icon-anchor" viewbox="0 0 54.89 64"><title>icon-anchor</title><path fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2" d="M26.96 13v50"/><path fill="none" stroke="#000" stroke-linejoin="bevel" stroke-width="2" d="M13.96 50l-10-3-3 10M39.96 50l10-3 4 10"/><path d="M49.71 47A24 24 0 0 1 27 63 24 24 0 0 1 4.21 47M17.96 17h18" fill="none" stroke="#000" stroke-linejoin="bevel" stroke-width="2"/><circle cx="26.96" cy="7" r="6" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/></symbol><symbol id="icon-close" viewbox="0 0 95.08 95.09"><title>icon-close</title><path d="M58.31 47.47l34.58-34.58a7.63 7.63 0 0 0 0-10.69 7.63 7.63 0 0 0-10.69 0L47.62 36.78 13 2.19a7.63 7.63 0 0 0-10.69 0 7.63 7.63 0 0 0 0 10.69l34.6 34.6L2.33 82.07a7.29 7.29 0 0 0 0 10.69 7.63 7.63 0 0 0 10.69 0l34.6-34.6 34.6 34.6a7.27 7.27 0 0 0 10.68 0 7.63 7.63 0 0 0 0-10.69z" data-name="Layer 1"/></symbol><symbol id="icon-email" viewbox="0 0 100 68.89"><title>icon-email</title><path d="M36.25 38.44L47.74 49.1a3.33 3.33 0 0 0 4.51 0l11.5-10.66 24.69 23.78H11.56zM93.33 11v46.6L68.68 33.85zM6.67 11l24.65 22.85L6.67 57.64zm5.1-4.37h76.46L50 42.12zM4.44 0A4.51 4.51 0 0 0 0 4.44v60a4.51 4.51 0 0 0 4.44 4.44h91.12a4.51 4.51 0 0 0 4.44-4.44v-60A4.51 4.51 0 0 0 95.56 0z" data-name="Layer 1"/></symbol><symbol id="icon-link" viewbox="0 0 100 58.84"><title>icon-link</title><path d="M78.47 48H49.21a10.66 10.66 0 0 1-9-4.91h10.58A21.57 21.57 0 0 0 71.7 26.64h6.76a10.67 10.67 0 0 1 0 21.33zm-67.6-26.47a10.67 10.67 0 0 1 10.67-10.66H50.8A10.59 10.59 0 0 1 58.34 14a10.94 10.94 0 0 1 1.43 1.79H49.21a21.57 21.57 0 0 0-20.92 16.4h-6.76a10.67 10.67 0 0 1-10.66-10.66zm39.92 10.66H39.86a10.68 10.68 0 0 1 9.35-5.54h10.93a10.67 10.67 0 0 1-9.35 5.54zM100 37.31a21.53 21.53 0 0 0-21.53-21.53h-6.92A21.53 21.53 0 0 0 50.8 0H21.54a21.53 21.53 0 0 0 0 43.06h6.83v-.31A21.41 21.41 0 0 0 34 52.53a21.4 21.4 0 0 0 15.2 6.31h29.26A21.56 21.56 0 0 0 100 37.31z"/></symbol><symbol id="icon-logo-star" viewbox="0 0 362.62 388.52"><title>icon-logo-star</title><path d="M156.58 239l-88.3 64.75c-10.59 7.06-18.84 11.77-29.43 11.77-21.19 0-38.85-18.84-38.85-40 0-17.69 14.13-30.64 27.08-36.52l103.6-44.74-103.6-45.92C13 142.46 0 129.51 0 111.85 0 90.66 18.84 73 40 73c10.6 0 17.66 3.53 28.25 11.77l88.3 64.75-11.74-104.78C141.28 20 157.76 0 181.31 0s40 18.84 36.5 43.56L206 149.52l88.3-64.75C304.93 76.53 313.17 73 323.77 73a39.2 39.2 0 0 1 38.85 38.85c0 18.84-12.95 30.61-27.08 36.5l-103.61 45.91L335.54 239c14.13 5.88 27.08 18.83 27.08 37.67 0 21.19-18.84 38.85-40 38.85-9.42 0-17.66-4.71-28.26-11.77L206 239l11.77 104.78c3.53 24.72-12.95 44.74-36.5 44.74s-40-18.84-36.5-43.56z"/></symbol><symbol id="icon-menu" viewbox="0 0 100 68.42"><title>icon-menu</title><path d="M94.73 10.53H5.27c-7 0-7-10.53 0-10.53h89.46c6.88.14 6.88 10.38 0 10.53zm0 18.42H5.27c-7 0-7 10.53 0 10.53h89.46c6.86-.17 6.86-10.38 0-10.53zm0 28.94H5.27c-7 0-7 10.53 0 10.53h89.46c7.03 0 7.03-10.53 0-10.53z" data-name="Layer 1"/></symbol><symbol id="icon-nav-almanac" viewbox="0 0 64 64"><path fill="none" d="M7 1h46v62H7z"/><path fill="none" vector-effect="non-scaling-stroke" d="M15 63V2M20 15h28M20 21h28"/></symbol><symbol id="icon-nav-forums" viewbox="0 0 64 64"><path d="M10 15h44v2H10zM10 25h44v2H10zM10 35h44v2H10z"/><path d="M17 61.174L32.37 48H64V4H0v44h17v13.174zM2 46V6h60v40H31.63L19 56.826V46H2z"/></symbol><symbol id="icon-nav-gallery" viewbox="0 0 64 64"><path d="M0 54h64V10H0v44zm2-2v-4.544l21.952-19.09 12.156 12.156 6.051-8.068L62 49.459V52H2zm60-40v34.826l-20.16-17.28-5.949 7.932-11.843-11.844L2 44.805V12h60z"/><path d="M51 28c3.309 0 6-2.691 6-6s-2.691-6-6-6-6 2.691-6 6 2.691 6 6 6zm0-10c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4z"/></symbol><symbol id="icon-nav-guide" viewbox="0 0 64 56.9"><title>icon-nav-guide</title><path d="M1 55.45l21-8 20 8 21-8v-46l-21 8-20-8-21 8v46zM22 1.45v46M42 9.45v46"/></symbol><symbol id="icon-nav-home" viewbox="0 0 64 64"><path d="M32 3L2 33h9v30h12V47h16v16h12V33h11z"/></symbol><symbol id="icon-nav-jobs" viewbox="0 0 64 64"><path d="M41 37.586L23.414 20l12-12-5.305-5.302-.688.486c-.025.018-2.537 1.769-5.671 1.769-2.244 0-4.277-.896-6.043-2.66L17 1.586-.414 19 12 31.414l10-10L39.586 39l-3 3L57 62.414 64.414 55 44 34.586l-3 3zM2.414 19L17.026 4.388c1.983 1.703 4.241 2.565 6.724 2.565 2.722 0 4.992-1.057 6.103-1.687L32.586 8 12 28.586 2.414 19zM57 59.586L39.414 42 44 37.414 61.586 55 57 59.586z"/></symbol><symbol id="icon-nav-newsletter" viewbox="0 0 64 64"><path d="M64 12H0v39h64V12zm-4.395 2L32 31.81 4.395 14h55.21zM2 49V14.835L32 34.19l30-19.355V49H2z"/></symbol><symbol id="icon-nav-shop" viewbox="0 0 64 64"><path d="M44 18h10v45H10V18h10z"/><path d="M22 24V11c0-5.523 4.477-10 10-10s10 4.477 10 10v13"/></symbol><symbol id="icon-nav-snippets" viewbox="0 0 64 64"><path d="M0 64h64.414L0-.414V64zm2-9h6v-2H2v-6h4v-2H2v-6h6v-2H2v-6h4v-2H2v-6h6v-2H2V4.414L59.586 62H2v-7z"/><path d="M13 27.586V55h27.414L13 27.586zm2 4.828L35.586 53H15V32.414zM64.375 46.375l-2.472-9.886L25-.414 17.586 7l36.903 36.903 9.886 2.472zm-2.75-2.75l-6.114-1.528L26.414 13 31 8.414l29.097 29.097 1.528 6.114zM25 2.414L29.586 7 25 11.586 20.414 7 25 2.414z"/></symbol><symbol id="icon-nav-video" viewbox="0 0 64 64"><path d="M46 30l17-10v32L46 42v10H1V20h45zM6 28h4M14 28h4"/><path d="M7 36h18v10H7zM6 12h26l8 8"/></symbol><symbol id="icon-search" viewbox="0 0 100 100"><title>icon-search</title><path d="M80.65 66.78a33.55 33.55 0 0 1-47.44-47.44 33.55 33.55 0 1 1 47.44 47.44zm6.73-54.16a43.06 43.06 0 0 0-65.32 55.71L2 88.39A6.8 6.8 0 0 0 11.61 98l20.06-20.06a43.06 43.06 0 0 0 55.71-65.32z"/></symbol><symbol id="icon-star" viewbox="0 0 100 95.52"><title>icon-star</title><path d="M64.19 28.77a5.17 5.17 0 0 0 3.9 2.83s29.27-3 31.74 4.61-23 22.39-23 22.39a5.17 5.17 0 0 0-1.49 4.58s11.91 26.9 5.42 31.61S52.4 79.87 52.4 79.87a5.21 5.21 0 0 0-2.41-.6 5.14 5.14 0 0 0-2.41.6S25.68 99.5 19.2 94.79s5.42-31.61 5.42-31.61a5.18 5.18 0 0 0-1.49-4.58S-2.31 43.83.17 36.21s31.74-4.61 31.74-4.61a5.19 5.19 0 0 0 3.9-2.83S42 0 50 0s14.19 28.77 14.19 28.77z" data-name="Layer 1"/></symbol><symbol id="icon-tag" viewbox="0 0 100 99.98"><title>icon-tag</title><path d="M42 42a10.07 10.07 0 1 1 0-14.24A10 10 0 0 1 42 42zm56 6.5l-43.74-44a7.19 7.19 0 0 0-5-2.25L8 0a7.55 7.55 0 0 0-8 7v1l2.5 41a7.11 7.11 0 0 0 2.25 4.75l43.49 44a7.2 7.2 0 0 0 5.24 2.25 6.81 6.81 0 0 0 5.25-2.25L97.72 59A7.47 7.47 0 0 0 98 48.5z"/></symbol></svg>
+  	<div style="display:none">
+	</div>
+<script  src='https://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-16/js/libs/jquery-3.2.1.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var bblpAJAX = {"ajaxurl":"https:\/\/css-tricks.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script  src='https://cdn.css-tricks.com/wp-content/plugins/bbpress-live-preview-css-tricks/includes/assets/js/scripts.min.js?ver=1.0.0'></script>
+<script  src='https://cdn.css-tricks.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+<script  src='https://cdn.css-tricks.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"https:\/\/css-tricks.com\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script  src='https://cdn.css-tricks.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=3.3.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"https:\/\/css-tricks.com\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_245f567ae953de9c427d52544d56608e","fragment_name":"wc_fragments_245f567ae953de9c427d52544d56608e"};
+/* ]]> */
+</script>
+<script  src='https://cdn.css-tricks.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=3.3.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pollsL10n = {"ajax_url":"https:\/\/css-tricks.com\/wp-admin\/admin-ajax.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"0","show_fading":"1"};
+/* ]]> */
+</script>
+<script  src='https://cdn.css-tricks.com/wp-content/plugins/wp-polls/polls-js.js?ver=2.73.8'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var markdownify = {"ajax_url":"\/wp-admin\/admin-ajax.php","nonce":"5ba2036802"};
+/* ]]> */
+</script>
+<script  src='https://cdn.css-tricks.com/wp-content/plugins/jetpack-markdown-live-preview-comments/js/markdownify.js?ver=1'></script>
+<script  src='https://cdn.css-tricks.com/wp-includes/js/comment-reply.min.js?ver=4.9.4'></script>
+<script  src='https://cdn.css-tricks.com/wp-includes/js/wp-embed.min.js?ver=4.9.4'></script>
+<script  src='https://cdn.css-tricks.com/wp-content/plugins/jetpack/_inc/build/shortcodes/js/gist.min.js?ver=4.9.4'></script>
+<script async="async"  src='https://cdn.css-tricks.com/wp-content/plugins/akismet/_inc/form.js?ver=4.0.3'></script>
+
+		<!--[if IE]>
+		<script type="text/javascript">
+			if ( 0 === window.location.hash.indexOf( '#comment-' ) ) {
+				// window.location.reload() doesn't respect the Hash in IE
+				window.location.hash = window.location.hash;
+			}
+		</script>
+		<![endif]-->
+		<script type="text/javascript">
+			(function () {
+				var comm_par_el = document.getElementById( 'comment_parent' ),
+					comm_par = ( comm_par_el && comm_par_el.value ) ? comm_par_el.value : '',
+					frame = document.getElementById( 'jetpack_remote_comment' ),
+					tellFrameNewParent;
+
+				tellFrameNewParent = function () {
+					if ( comm_par ) {
+						frame.src = "https://jetpack.wordpress.com/jetpack-comment/?blogid=45537868&postid=16119&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=0&show_avatars=1&avatar_default=retro&greeting=Leave+a+Comment&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en_US&jetpack_version=5.8&sig=ac8947e6735fd56786e902bd8b7b3bec076d791d#parent=https%3A%2F%2Fcss-tricks.com%2Fsnippets%2Fcss%2Fnamed-colors-and-hex-equivalents%2F" + '&replytocom=' + parseInt( comm_par, 10 ).toString();
+					} else {
+						frame.src = "https://jetpack.wordpress.com/jetpack-comment/?blogid=45537868&postid=16119&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=0&show_avatars=1&avatar_default=retro&greeting=Leave+a+Comment&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en_US&jetpack_version=5.8&sig=ac8947e6735fd56786e902bd8b7b3bec076d791d#parent=https%3A%2F%2Fcss-tricks.com%2Fsnippets%2Fcss%2Fnamed-colors-and-hex-equivalents%2F";
+					}
+				};
+
+				
+				if ( 'undefined' !== typeof addComment ) {
+					addComment._Jetpack_moveForm = addComment.moveForm;
+
+					addComment.moveForm = function ( commId, parentId, respondId, postId ) {
+						var returnValue = addComment._Jetpack_moveForm( commId, parentId, respondId, postId ),
+							cancelClick, cancel;
+
+						if ( false === returnValue ) {
+							cancel = document.getElementById( 'cancel-comment-reply-link' );
+							cancelClick = cancel.onclick;
+							cancel.onclick = function () {
+								var cancelReturn = cancelClick.call( this );
+								if ( false !== cancelReturn ) {
+									return cancelReturn;
+								}
+
+								if ( ! comm_par ) {
+									return cancelReturn;
+								}
+
+								comm_par = 0;
+
+								tellFrameNewParent();
+
+								return cancelReturn;
+							};
+						}
+
+						if ( comm_par == parentId ) {
+							return returnValue;
+						}
+
+						comm_par = parentId;
+
+						tellFrameNewParent();
+
+						return returnValue;
+					};
+				}
+
+				
+				// Do the post message bit after the dom has loaded.
+				document.addEventListener( 'DOMContentLoaded', function () {
+					var iframe_url = "https:\/\/jetpack.wordpress.com";
+					if ( window.postMessage ) {
+						if ( document.addEventListener ) {
+							window.addEventListener( 'message', function ( event ) {
+								var origin = event.origin.replace( /^http:\/\//i, 'https://' );
+								if ( iframe_url.replace( /^http:\/\//i, 'https://' ) !== origin ) {
+									return;
+								}
+								jQuery( frame ).height( event.data );
+							});
+						} else if ( document.attachEvent ) {
+							window.attachEvent( 'message', function ( event ) {
+								var origin = event.origin.replace( /^http:\/\//i, 'https://' );
+								if ( iframe_url.replace( /^http:\/\//i, 'https://' ) !== origin ) {
+									return;
+								}
+								jQuery( frame ).height( event.data );
+							});
+						}
+					}
+				})
+
+			})();
+		</script>
+
+		<script type='text/javascript' src='https://stats.wp.com/e-201810.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:5.8',blog:'45537868',post:'16119',tz:'-7',srv:'css-tricks.com'} ]);
+	_stq.push([ 'clickTrackerInit', '45537868', '16119' ]);
+</script>
+
+  
+    <script>var __should_toggle_comments = false;</script>
+  
+<script src='https://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-16/js/min/global-min.js?v=4.0'></script>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-68528-29', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
+</body>
+
+</html>

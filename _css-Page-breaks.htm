@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1>Page breaks</h1>
+<p>The media query will only apply if the media type is screen and the viewport is 480px wide or wider.</p>
+<pre>
+You should specify when page breaks must occur and when they should not occur. Modern browsers implement three CSS constructs: page-break-before, page-break-after, page-break-inside, orphans and widows. 
+page-break-before and page-break-after take the following values: auto, always, avoid, left, right and inherit
+page-break-inside can be avoid, auto or inherit
+orphans and widows, is a number (e.g. 2)
+
+Note that these are recommendations, i.e. a browser generating the print document should but does not need to use these heuristics: 
+ Break as few times as possible.
+ Make all pages that do not end with a forced break appear to have about the same height.
+ Avoid breaking inside a replaced element. 
+
+Below are some typical use cases. 
+page-break-before defines if page breaks should occur before the tag, typically titlesExample
+ section {page-break-before: always;}
+ h1 {page-break-before: always;}
+
+page-break-after defines if page breaks should occur after a tag
+ section {page-break-after: always;}
+ h1 {page-break-after: avoid;}
+
+page-break-inside defines if page breaks should occur inside an element.
+ p {page-break-inside: avoid;}
+
+orphans and widows - CSS 2.1 also allows to specify what happens with orphans and widows. 
+“The 'orphans' property specifies the minimum number of lines in a block container 
+that must be left at the bottom of a page. The 'widows' property specifies the 
+minimum number of lines in a block container that must be left at the top of a page. 
+Examples of how they are used to control page breaks are given below.”
+ p {orphans:3; widows:2;}
+
+
+
+</pre>
+</body>
+</html>
+
